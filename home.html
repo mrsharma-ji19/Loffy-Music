@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+
+<body>
+  <div class="navbar">
+    <div style="display: flex;"><img style="height: 100px; width: 130px;"
+        src="https://media.istockphoto.com/id/2123024383/photo/virus-cell-under-a-microscope-pathogens-abstract-3d-futuristic-sphere-particles-and-energy.jpg?s=612x612&w=0&k=20&c=HsNjzLiv69S4v2ocBG3FiUn8qqlNaEoDiOiJHVsPDMQ="
+        alt="logo">
+      <br>
+      <br>
+
+
+      <a href="./home.html" style="text-decoration: none;">
+        <h1 style="color: white;">música</h1>
+      </a>
+    </div>
+
+    <div></div>
+    <div class="sidebar">
+      <ul class="nav">
+        <li> <a href="./home.html" class="link">HOME</a></li>
+        <li><a href="./about.html" class="link">ABOUT</a></li>
+        <li><a href="./project.html" class="link">PROJECTS</a></li>
+        <li><a href="./contact.html" class="link">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="intro">
+
+    <div style="display: flex;">
+      <div class="about">
+        <h2 style="color: white; font-size: xx-large;">música</h2>
+        <p>
+
+          𝔒𝔫𝔢 𝔤𝔬𝔬𝔡 𝔱𝔥𝔦𝔫𝔤 𝔞𝔟𝔬𝔲𝔱 𝔪𝔲𝔰𝔦𝔠, 𝔴𝔥𝔢𝔫 𝔦𝔱 𝔥𝔦𝔱𝔰 𝔶𝔬𝔲, 𝔶𝔬𝔲 𝔣𝔢𝔢𝔩
+          𝔫𝔬
+          𝔭𝔞𝔦𝔫. ...</p>
+        <p style="color: white; font-size: 18px;">Music is a very important part of our lives. Human souls
+          require
+          music to
+          rejuvenate. It brings peace and harmony to their lives. Without any doubt, we can call music 'the
+          magic
+          of god', and it is this magic that transforms a mere series of sounds to soulful music.</p>
+      </div>
+
+      <div class="pic">
+        <img class="photo" src="musica-removebg.png" alt="">
+      </div>
+    </div>
+
+
+    <div >
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <!-- <img src="https://static.toiimg.com/thumb/msid-85826147,width-1280,resizemode-4/85826147.jpg"
+            style="width: 100%"> -->
+          
+          <!-- <video autoplay style="margin: auto;" width="100%" height="700px" controls="controls"  >
+              <source 
+            src="video/Ranjha - Full Song_Shershaah_Sidharth -Kiara_B Praak_Jasleen Royal_Anvita Dutt.mp4" 
+                      type="video/mp4" />
+          </video> -->
+
+
+          <audio id="audio_play">
+            <source src="video/Ranjha - Shershaah 320 Kbps.mp3" type="audio/ogg" />
+            <source src="video/Ranjha - Shershaah 320 Kbps.mp3" type="audio/mpeg" />
+        </audio>
+        
+        <img src="video/Ranjha - Shershaah 320 Kbps.mp3" onClick="document.getElementById('audio_play').play(); return false;" />
+
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://i.ytimg.com/vi/UWHz5qs2Lp0/mqdefault.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://i.ytimg.com/vi/vdY5SFZBgnk/maxresdefault.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+    </div>
+
+  </div>
+  <div>
+    <a href="#" class="copy">&copy;2024 luffy</a>
+  </div>
+</body>
+
+</html>
